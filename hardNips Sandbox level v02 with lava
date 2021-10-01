@@ -80,7 +80,22 @@ var data = {
     "29-0",
     "29-0"
   ],
-  "sounds": [],
+  "sounds": [
+    {
+      "name": "alienmood",
+      "path": "/assets/sounds/alienmood.mp3",
+      "loop": true,
+      "autoplay": true,
+      "volume": "0.2",
+      "local": true,
+      "range": 140,
+      "position": {
+        "x": -33,
+        "y": 6,
+        "z": 1
+      }
+    }
+  ],
   "ambientLight": {
     "color": 5661383
   },
@@ -182,6 +197,81 @@ var data = {
       "specular": 0,
       "side": 0,
       "rotation": 0
+    },
+    {
+      "name": "material5",
+      "type": "phong",
+      "texture": "/assets/textures/concrete/a49.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "material6",
+      "type": "phong",
+      "texture": "/assets/textures/concrete/a47.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "material7",
+      "type": "phong",
+      "texture": "/assets/textures/concrete/a53.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "material8",
+      "type": "phong",
+      "texture": "/assets/textures/concrete/a50.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "material9",
+      "type": "phong",
+      "texture": "/assets/textures/metal/a19.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
     }
   ],
   "cubes": [
@@ -210,7 +300,7 @@ var data = {
     {
       "name": "cube2",
       "material": [
-        0
+        "6"
       ],
       "size": {
         "x": 65,
@@ -232,7 +322,7 @@ var data = {
     {
       "name": "cube3",
       "material": [
-        0
+        "9"
       ],
       "size": {
         "x": 2,
@@ -259,7 +349,7 @@ var data = {
       "size": {
         "x": 150,
         "y": 1,
-        "z": 100
+        "z": 120
       },
       "position": {
         "x": -6.709841997804917,
@@ -277,17 +367,22 @@ var data = {
     {
       "name": "cube5",
       "material": [
-        0
+        "7",
+        "7",
+        "6",
+        "7",
+        "3",
+        "0"
       ],
       "size": {
         "x": 25,
-        "y": 50,
-        "z": 20
+        "y": 25,
+        "z": 10
       },
       "position": {
         "x": -43.64081784343893,
         "y": 6.507751049582728,
-        "z": -3.205292251994415
+        "z": -0.6052922519944133
       },
       "rotation": {
         "x": 0,
@@ -299,7 +394,7 @@ var data = {
     {
       "name": "cube6",
       "material": [
-        "2"
+        "6"
       ],
       "size": {
         "x": 1,
@@ -454,7 +549,7 @@ var data = {
     {
       "name": "cube13",
       "material": [
-        0
+        "6"
       ],
       "size": {
         "x": 25,
@@ -476,7 +571,7 @@ var data = {
     {
       "name": "cube14",
       "material": [
-        0
+        "9"
       ],
       "size": {
         "x": 2,
@@ -498,7 +593,7 @@ var data = {
     {
       "name": "cube15",
       "material": [
-        0
+        "9"
       ],
       "size": {
         "x": 2,
@@ -520,7 +615,7 @@ var data = {
     {
       "name": "cube16",
       "material": [
-        0
+        "9"
       ],
       "size": {
         "x": 2,
@@ -542,7 +637,7 @@ var data = {
     {
       "name": "cube17",
       "material": [
-        0
+        "9"
       ],
       "size": {
         "x": 5,
@@ -673,7 +768,7 @@ var data = {
     {
       "name": "sphere1",
       "material": [
-        0
+        "9"
       ],
       "size": {
         "x": 3,
@@ -714,7 +809,7 @@ var data = {
       "axis": "y",
       "distance_mod": -1,
       "material": [
-        0
+        "9"
       ],
       "sound": "energy.mp3",
       "volume": 0.6,
