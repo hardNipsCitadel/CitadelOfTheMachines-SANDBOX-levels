@@ -271,7 +271,8 @@ var data = {
         "y": 0,
         "z": 0
       },
-      "collision": true
+      "collision": true,
+      "lava": true
     },
     {
       "name": "cube5",
