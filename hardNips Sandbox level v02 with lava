@@ -1,0 +1,815 @@
+var data = {
+  "fov": 45,
+  "bumper_energy": 7,
+  "sealevel": -50,
+  "seabed": -100,
+  "zones": [
+    {
+      "name": "1",
+      "inZoneWhen": (position) => { return (true) },
+      "constraints": [
+        {
+          "playerAxis": "x",
+          "cameraAxis": "x",
+          "scale": 1,
+          "offset": 0
+        },
+        {
+          "playerAxis": "y",
+          "cameraAxis": "y",
+          "scale": 1,
+          "offset": 3
+        },
+        {
+          "playerAxis": "z",
+          "cameraAxis": "z",
+          "scale": 1,
+          "offset": 20
+        }
+      ]
+    }
+  ],
+  "background_color": 1579043,
+  "entrypoints": [
+    {
+      "camera": {
+        "position": {
+          "x": 0,
+          "y": 10,
+          "z": 40
+        }
+      },
+      "player": {
+        "position": {
+          "x": -32.21114387568195,
+          "y": 6.511078633782592,
+          "z": 1.8878887043581103
+        },
+        "material": 0,
+        "rotation": {
+          "x": 0,
+          "y": 87.90395632412124,
+          "z": 0
+        }
+      }
+    },
+    {
+      "camera": {
+        "position": {
+          "x": 48,
+          "y": 4,
+          "z": 27
+        }
+      },
+      "player": {
+        "position": {
+          "x": 7.5828508912229,
+          "y": 6.508815915933584,
+          "z": -0.702057548499957
+        },
+        "material": 0,
+        "rotation": {
+          "x": 0,
+          "y": 78.87309937275438,
+          "z": 0
+        }
+      }
+    }
+  ],
+  "exits": [
+    "29-0",
+    "29-0"
+  ],
+  "sounds": [],
+  "ambientLight": {
+    "color": 5661383
+  },
+  "pointLights": [
+    {
+      "name": "light1",
+      "color": 16777215,
+      "intensity": "3",
+      "distance": "130",
+      "decay": "1",
+      "near": 1,
+      "far": 360,
+      "bias": 0.000005,
+      "radius": 0.003,
+      "segments": 4,
+      "position": {
+        "x": "49",
+        "y": "30",
+        "z": "-16"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "material0",
+      "type": "phong",
+      "texture": "/assets/textures/misc/a4.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "shininess": 100,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "glass",
+      "type": "basic",
+      "texture": "/assets/textures/misc/blank.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "transparent": true,
+      "opacity": 0,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "check",
+      "type": "phong",
+      "texture": "/assets/textures/misc/check2.jpg",
+      "repeat": {
+        "x": "4",
+        "y": "4"
+      },
+      "color": 16777215,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "glow",
+      "type": "basic",
+      "texture": "/assets/textures/misc/blank.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "transparent": false,
+      "opacity": 1,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    },
+    {
+      "name": "material4",
+      "type": "phong",
+      "texture": "/assets/textures/concrete/a62.jpg",
+      "repeat": {
+        "x": 1,
+        "y": 1
+      },
+      "color": 16777215,
+      "shininess": 0,
+      "emissive": 0,
+      "specular": 0,
+      "side": 0,
+      "rotation": 0
+    }
+  ],
+  "cubes": [
+    {
+      "name": "cube1",
+      "material": [
+        "2"
+      ],
+      "size": {
+        "x": 100,
+        "y": 100,
+        "z": 100
+      },
+      "position": {
+        "x": "0",
+        "y": -100,
+        "z": -100
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube2",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 65,
+        "y": 2,
+        "z": 27
+      },
+      "position": {
+        "x": -6.609841997804917,
+        "y": 4.557473545112613,
+        "z": -6.4090486629471535
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube3",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 2,
+        "y": 2,
+        "z": 4
+      },
+      "position": {
+        "x": 0.19015800219507603,
+        "y": 5.957473545112608,
+        "z": 1.3909513370528335
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube4",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 150,
+        "y": 1,
+        "z": 100
+      },
+      "position": {
+        "x": -6.709841997804917,
+        "y": 4,
+        "z": -15
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true,
+      "lava": true
+    },
+    {
+      "name": "cube5",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 25,
+        "y": 50,
+        "z": 20
+      },
+      "position": {
+        "x": -43.64081784343893,
+        "y": 6.507751049582728,
+        "z": -3.205292251994415
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": false
+    },
+    {
+      "name": "cube6",
+      "material": [
+        "2"
+      ],
+      "size": {
+        "x": 1,
+        "y": 20,
+        "z": 25
+      },
+      "position": {
+        "x": 6.159182156561412,
+        "y": 15.007751049582621,
+        "z": -1.9052922519944144
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      },
+      "collision": true,
+      "noShadow": true
+    },
+    {
+      "name": "cube7",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 3.4,
+        "y": 10,
+        "z": 22
+      },
+      "position": {
+        "x": 19.790158002195,
+        "y": 5.957473545112608,
+        "z": -5.609048662947162
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube8",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 10,
+        "y": 1,
+        "z": 20
+      },
+      "position": {
+        "x": 27.190158002195105,
+        "y": 7.457473545112602,
+        "z": -26.40904866294718
+      },
+      "rotation": {
+        "x": 20,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube9",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 4,
+        "y": 1,
+        "z": 15
+      },
+      "position": {
+        "x": 30.19015800219516,
+        "y": 10.7,
+        "z": -25.809048662947177
+      },
+      "rotation": {
+        "x": -5,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube10",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 3,
+        "y": 25,
+        "z": 5
+      },
+      "position": {
+        "x": 26.390158002195097,
+        "y": -0.9425264548873883,
+        "z": -17.009048662947038
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube11",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 5,
+        "y": 10,
+        "z": 3
+      },
+      "position": {
+        "x": 22.890158002195044,
+        "y": 5.857473545112608,
+        "z": -17.309048662947042
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": false
+    },
+    {
+      "name": "cube12",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 3,
+        "y": 26,
+        "z": 20
+      },
+      "position": {
+        "x": 36.89015800219524,
+        "y": -1.1425264548873884,
+        "z": -16.609048662947032
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube13",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 25,
+        "y": 50,
+        "z": 20
+      },
+      "position": {
+        "x": -47.14081784343898,
+        "y": 6.507751049582728,
+        "z": -1.0052922519944132
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube14",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 2,
+        "y": 1,
+        "z": 20
+      },
+      "position": {
+        "x": -18.180812410257953,
+        "y": 4.91217742972608,
+        "z": 16.575916360372382
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube15",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 2,
+        "y": 40,
+        "z": 3
+      },
+      "position": {
+        "x": 0.11918758974193872,
+        "y": 7.012177429726073,
+        "z": 24.375916360372493
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -81
+      },
+      "collision": true
+    },
+    {
+      "name": "cube16",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 2,
+        "y": 1,
+        "z": 25
+      },
+      "position": {
+        "x": 20.819187589741873,
+        "y": 9.612177429726064,
+        "z": 15.675916360372371
+      },
+      "rotation": {
+        "x": 7,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true
+    },
+    {
+      "name": "cube17",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 5,
+        "y": 1,
+        "z": 5
+      },
+      "position": {
+        "x": 22.119187589741884,
+        "y": 9.012177429726062,
+        "z": 25.57591636037251
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": false
+    },
+    {
+      "name": "cube18",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 3.4,
+        "y": 10,
+        "z": 3.5
+      },
+      "position": {
+        "x": 19.590158002194997,
+        "y": 5.95,
+        "z": 6.790951337052828
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": false
+    },
+    {
+      "name": "cube19",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 25,
+        "y": 3,
+        "z": 2
+      },
+      "position": {
+        "x": 9.890158002194969,
+        "y": 4.757473545112612,
+        "z": -20.60904866294709
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": false
+    },
+    {
+      "name": "cube20",
+      "material": [
+        "1"
+      ],
+      "size": {
+        "x": 164,
+        "y": 57,
+        "z": 2
+      },
+      "position": {
+        "x": -78.64081784343885,
+        "y": -27.29224895041728,
+        "z": -1.805292251994414
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 15
+      },
+      "collision": true,
+      "noShadow": true
+    }
+  ],
+  "models": [],
+  "mirrors": [],
+  "mobs": [
+    {
+      "name": "teleport",
+      "type": "teleport",
+      "position": {
+        "x": 20,
+        "y": 11.88528766072351,
+        "z": -25
+      },
+      "exit": "01-1",
+      "alive": true
+    },
+    {
+      "name": "balldroid",
+      "type": "balldroid",
+      "laser_move_speed": 0.8,
+      "laser_delay": 100,
+      "roaming_range": 900,
+      "position": {
+        "x": 9.696298722425821,
+        "y": 12.508587100201318,
+        "z": -25.25113278035098
+      }
+    },
+    {
+      "name": "jump0",
+      "type": "jump",
+      "position": {
+        "x": 15,
+        "y": 4,
+        "z": -20
+      },
+      "direction": 0,
+      "pressed": false,
+      "actionfunc": ()=>{}
+    }
+  ],
+  "cylinders": [],
+  "spheres": [
+    {
+      "name": "sphere1",
+      "material": [
+        0
+      ],
+      "size": {
+        "x": 3,
+        "y": 10,
+        "z": 20
+      },
+      "segments": 20,
+      "openEnded": false,
+      "position": {
+        "x": 4.428411517212648,
+        "y": 6.509548781928082,
+        "z": 2.5180646238722724
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "collision": true,
+      "moves": true,
+      "physics": [
+        2,
+        1,
+        0,
+        2,
+        4294967295
+      ]
+    }
+  ],
+  "fog": {
+    "color": 0,
+    "near": "0",
+    "far": "113"
+  },
+  "platforms": [
+    {
+      "name": "platform1",
+      "axis": "y",
+      "distance_mod": -1,
+      "material": [
+        0
+      ],
+      "sound": "energy.mp3",
+      "volume": 0.6,
+      "range": 100,
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "size": {
+        "x": 4,
+        "y": 18,
+        "z": 4
+      },
+      "moves": true,
+      "max_speed": {
+        "x": 5,
+        "y": 5,
+        "z": 5
+      },
+      "physics": [
+        99999,
+        1,
+        0.1,
+        1,
+        4294967294
+      ],
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_offset": {
+        "x": 0,
+        "y": 6,
+        "z": 0
+      },
+      "movement": {
+        "x": 0,
+        "y": -3,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.01683933114712453,
+        "y": 11.968830504998403,
+        "z": 0.9885068375516579
+      },
+      "position": {
+        "x": -2.782562268470121,
+        "y": -4.6559194950015685,
+        "z": 0.9885068375516579
+      },
+      "active": true,
+      "dist": -10,
+      "mode": 1,
+      "pause": 60,
+      "resetWhen": function(e,t){return this.dist<0?e[t.axis]*world.scale<t.origin_temp[t.axis]+t.dist:e[t.axis]*world.scale>t.origin_temp[t.axis]+t.dist}
+    }
+  ],
+  "atmosphere": {
+    "bloom": {
+      "radius": 1,
+      "threshold": 0.54,
+      "strength": 0.7
+    },
+    "smoke": {
+      "position": {
+        "x": 29,
+        "y": 22,
+        "z": -1
+      },
+      "geoSize": 50,
+      "planeSize": 75,
+      "color": 0
+    }
+  },
+  "sunLight": {
+    "position": {
+      "x": 0,
+      "y": 3,
+      "z": -300
+    },
+    "target": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "color": 2052523,
+    "shadowFar": 300,
+    "distance": 100,
+    "intensity": 2,
+    "shadowSize": 150
+  },
+  "background": "/assets/textures/sky/s3.jpg",
+  "backgroundHorizontal": true
+};
+var map_runtime = function (tick) { };
+var map_init = function () { };
