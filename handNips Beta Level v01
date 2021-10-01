@@ -197,7 +197,7 @@ var data = {
       },
       "position": {
         "x": "0",
-        "y": "-45",
+        "y": -1000,
         "z": 0
       },
       "rotation": {
@@ -263,7 +263,7 @@ var data = {
       },
       "position": {
         "x": -6.709841997804917,
-        "y": 4.557473545112613,
+        "y": -100,
         "z": -15.10904866294704
       },
       "rotation": {
@@ -272,7 +272,8 @@ var data = {
         "z": 0
       },
       "collision": true,
-      },
+      "lava": false
+    },
     {
       "name": "cube5",
       "material": [
