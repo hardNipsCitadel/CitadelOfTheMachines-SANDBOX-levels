@@ -272,8 +272,7 @@ var data = {
         "z": 0
       },
       "collision": true,
-      "lava": true
-    },
+      },
     {
       "name": "cube5",
       "material": [
